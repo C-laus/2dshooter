@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<map name="Map1" width="1000" height="600">
+	<element typ="span" x="150" y="0"></element>
+	<element typ="span" x="450" y="0"></element>
+	<element typ="span" x="500" y="550"></element>
+	<element typ="bridge" x0="0" y0="150" x1="500" y1="150" len="400" parts="50"></element>
+	<element typ="box" x="250" y="50" w="100" h="10"></element>
+	<element typ="bridge" x0="300" y0="50" x1="500" y1="50" len="200" parts="20"></element>
+	<element typ="box" x="500" y="60" w="10" h="200"></element>
+	<element typ="box" x="0" y="130" w="10" h="60"></element>
+	<element typ="box" x="500" y="600" w="1000" h="20"></element>
+	<element typ="box" x="500" y="500" w="20" h="100"></element>
+	<element typ="box" x="500" y="450" w="200" h="10"></element>
+	<element typ="box" x="300" y="550" w="200" h="10"></element>
+</map>
