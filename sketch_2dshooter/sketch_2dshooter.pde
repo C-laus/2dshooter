@@ -74,5 +74,5 @@ void draw()
 }
 
 boolean sketchFullScreen() {
-  return false;
+  return true;
 }

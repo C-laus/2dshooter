@@ -202,7 +202,7 @@ class game
       m.display();
     else{
         m.killBody();
-        bullets.remove(m);
+        mines.remove(m);
     }
   }
   
