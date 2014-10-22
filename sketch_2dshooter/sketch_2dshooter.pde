@@ -47,7 +47,6 @@ void setup()
   mines = new ArrayList<mine>();
 
   box2d = new Box2DProcessing(this);
-  //game = new game(0,"map.xml");
 }
 
 void draw()
@@ -68,7 +67,6 @@ void draw()
     textSize(16);
     fill(t.getColor());
     text(t.getName()+":"+t.getScoor(), width*10/11, 30 + 20 * pointpos);
-    //println(t.getName()+":"+t.getScoor());
     pointpos++;
   }
 }

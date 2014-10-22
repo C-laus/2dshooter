@@ -10,8 +10,8 @@ class mine
   mine(player p)
   {
     this.p = p;
-    w = 2;
-    h = 2;
+    w = 4;
+    h = 4;
     
     BodyDef bd = new BodyDef();
     bd.position.set(p.getWorldPos());
@@ -57,10 +57,22 @@ class mine
   void display() {
     lifetime--;
     Vec2 pos = box2d.getBodyPixelCoord(body);
-    pushMatrix();
+    if(lifetime <= 0)
+    {
+      for(int i = 0;i <= 10; i++)
+      {
+        pos.addLocal(new Vec2(0,2.5)); //<>//
+        Vec2 velocityvec = new Vec2(random(-1,1),random(0,1));
+        velocityvec.normalize();
+        velocityvec.mulLocal(200);
+        bullets.add(new bullet(pos,velocityvec,1000,100,p));  
+      }
+    }
+    pos = box2d.getBodyPixelCoord(body);
+    pushMatrix();          
     translate(pos.x,pos.y);
     fill(0,0,0);
-    stroke(0);
+    noStroke();
     rectMode(CENTER);
     rect(0,0,w,h);
     popMatrix();
