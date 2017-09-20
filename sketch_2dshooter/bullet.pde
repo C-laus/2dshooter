@@ -16,6 +16,7 @@ class bullet
     this.lifespan = lifespan;
     this.p = p;
     
+    
     BodyDef bd = new BodyDef();
     bd.type = BodyType.DYNAMIC;
     bd.bullet = true;
